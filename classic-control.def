@@ -1,0 +1,15 @@
+Bootstrap: shub
+From: singularityhub/ubuntu:latest
+
+%post
+    apt-get -y update
+    apt-get -y install wget bzip2
+    wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    chmod +x Miniconda3-latest-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda3
+    rm Miniconda3-latest-Linux-x86_64.sh
+
+    # Installing gym, psutil
+    /usr/local/miniconda3/bin/pip install gym
+    /usr/local/miniconda3/bin/conda install -c anaconda psutil
+    
