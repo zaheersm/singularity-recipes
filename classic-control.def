@@ -1,6 +1,9 @@
 Bootstrap: shub
 From: singularityhub/ubuntu:latest
 
+%environment
+    export PATH="/usr/local/miniconda3/bin:$PATH"
+
 %post
     apt-get -y update
     apt-get -y install wget bzip2
