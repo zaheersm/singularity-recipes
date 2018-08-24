@@ -6,7 +6,7 @@ From: singularityhub/ubuntu:latest
 
 %post
     apt-get -y update
-    apt-get -y install wget bzip2
+    apt-get -y install wget bzip2 parallel
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda3
     rm Miniconda3-latest-Linux-x86_64.sh
