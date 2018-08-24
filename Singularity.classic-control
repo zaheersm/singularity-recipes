@@ -14,4 +14,7 @@ From: singularityhub/ubuntu:latest
     # Installing gym, psutil
     /usr/local/miniconda3/bin/pip install gym
     /usr/local/miniconda3/bin/conda install -c anaconda psutil
+
+    # Installing torch (cpu-version)
+    /usr/local/miniconda3/bin/conda install -y pytorch-cpu torchvision-cpu -c pytorch
    
