@@ -23,4 +23,5 @@ From: singularityhub/ubuntu:latest
     /usr/local/miniconda3/bin/conda install -y pytorch-cpu torchvision-cpu -c pytorch
 
     # Installing Seaborn
+    /usr/local/miniconda3/bin/conda install -y -c conda-forge matplotlib
     /usr/local/miniconda3/bin/conda install -y seaborn
