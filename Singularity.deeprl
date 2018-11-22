@@ -37,5 +37,5 @@ From: singularityhub/ubuntu:latest
 
     git clone https://github.com/pybox2d/pybox2d
     cd pybox2d
-    python setup.py build
-    python setup.py install
+    /usr/local/miniconda3/bin/python setup.py build
+    /usr/local/miniconda3/bin/python setup.py install
