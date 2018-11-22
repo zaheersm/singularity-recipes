@@ -33,7 +33,7 @@ From: singularityhub/ubuntu:latest
     git clone https://github.com/openai/baselines.git
     cd baselines
     git reset --hard 8e56dd
-    pip install -e .
+    /usr/local/miniconda3/bin/pip install -e .
 
     git clone https://github.com/pybox2d/pybox2d
     cd pybox2d
