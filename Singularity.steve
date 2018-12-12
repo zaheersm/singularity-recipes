@@ -17,7 +17,7 @@ From: singularityhub/ubuntu:latest
     /usr/local/miniconda2/bin/pip install numpy scipy portalocker
 
     # Installing tensorflow
-    /usr/local/miniconda2/bin/pip install tensorflow
+    /usr/local/miniconda2/bin/pip install tensorflow==1.6
 
     # Installing Steve   
     /usr/local/miniconda2/bin/pip install gym[all]==0.9.4
