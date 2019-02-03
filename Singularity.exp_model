@@ -48,3 +48,5 @@ From: singularityhub/ubuntu:latest
     git clone https://github.com/ntasfi/PyGame-Learning-Environment
     cd PyGame-Learning-Environment
     /usr/local/miniconda3/bin/pip install -e .
+
+    /usr/local/miniconda3/bin/conda install -y -c menpo pathlib
