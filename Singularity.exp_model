@@ -13,15 +13,6 @@ From: singularityhub/ubuntu:latest
     bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda3
     rm Miniconda3-latest-Linux-x86_64.sh
 
-    # Installing Pygame 
-    /usr/local/miniconda3/bin/pip install pygame
-    
-    # Installing PLE
-    cd /home
-    git clone https://github.com/ntasfi/PyGame-Learning-Environment
-    cd PyGame-Learning-Environment
-    /usr/local/miniconda3/bin/pip install -e .
-
     # Installing tensorflow
     /usr/local/miniconda3/bin/conda install -y -c conda-forge tensorflow
 
@@ -49,3 +40,11 @@ From: singularityhub/ubuntu:latest
     git reset --hard 8e56dd
     /usr/local/miniconda3/bin/pip install -e .
 
+    # Installing Pygame
+    /usr/local/miniconda3/bin/pip install pygame
+
+    # Installing PLE
+    cd /home
+    git clone https://github.com/ntasfi/PyGame-Learning-Environment
+    cd PyGame-Learning-Environment
+    /usr/local/miniconda3/bin/pip install -e .
