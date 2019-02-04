@@ -13,12 +13,21 @@ From: singularityhub/ubuntu:latest
     bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda3
     rm Miniconda3-latest-Linux-x86_64.sh
 
+    # Installing Pygame 
+    /usr/local/miniconda3/bin/pip install pygame
+    
+    # Installing PLE
+    cd /home
+    git clone https://github.com/ntasfi/PyGame-Learning-Environment
+    cd PyGame-Learning-Environment
+    /usr/local/miniconda3/bin/pip install -e .
+
     # Installing tensorflow
     /usr/local/miniconda3/bin/conda install -y -c conda-forge tensorflow
-    
+
     # Installing tensorboardX
     /usr/local/miniconda3/bin/pip install tensorboardX
-    
+
     # Installing shapely
     /usr/local/miniconda3/bin/conda install -y shapely
 
@@ -26,10 +35,6 @@ From: singularityhub/ubuntu:latest
     cd pybox2d
     /usr/local/miniconda3/bin/python setup.py build
     /usr/local/miniconda3/bin/python setup.py install
-
-    # Install Pygame
-    /usr/local/miniconda3/bin/conda install -y -c cogsci pygame
-    git clone https://github.com/ntasfi/PyGame-Learning-Environment
 
     # Installing PyTorch
     /usr/local/miniconda3/bin/conda install -y pytorch-cpu torchvision-cpu -c pytorch
@@ -44,9 +49,3 @@ From: singularityhub/ubuntu:latest
     git reset --hard 8e56dd
     /usr/local/miniconda3/bin/pip install -e .
 
-    cd /home
-    git clone https://github.com/ntasfi/PyGame-Learning-Environment
-    cd PyGame-Learning-Environment
-    /usr/local/miniconda3/bin/pip install -e .
-
-    /usr/local/miniconda3/bin/conda install -y -c menpo pathlib
