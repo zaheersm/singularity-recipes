@@ -41,7 +41,7 @@ From: singularityhub/ubuntu:latest
     /usr/local/miniconda3/bin/pip install -e .
 
     # TODO: This might change the gym version installed earlier
-    /usr/local/miniconda3/bin/pip install gym[all]==0.9.7
+    /usr/local/miniconda3/bin/pip install gym[all]
 
     # Installing Pygame
     /usr/local/miniconda3/bin/pip install pygame
